@@ -3,27 +3,31 @@
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue)
 ![Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)
 ![License](https://img.shields.io/badge/license-MIT-green)
+![GitHub Last Commit](https://img.shields.io/github/last-commit/AlBochi/compliance-roi-engine)
 
-> AI-powered compliance toolkit for calculating ROI and generating audit responses
+> AI-powered toolkit for compliance financial analysis and audit automation
 
-## Features ✨
+## ✨ Features
 
-- **ROI Calculator**: Quantify financial impact of compliance programs
-- **Audit Response Generator**: AI-powered answer drafting with policy citations
-- **Framework Coverage**: Visualize compliance across standards (SOC2, HIPAA, GDPR)
-- **Policy Database**: Centralized control library with multi-framework support
+- **ROI Dashboard**: Calculate financial impact of compliance programs
+- **Smart Policy Database**: Centralized controls (SOC2/HIPAA/GDPR/PCI DSS)
+- **Audit Assistant**: Generate standards-compliant responses with citations
+- **Coverage Analyzer**: Visualize framework implementation status
 
-## Quick Start 🛠️
+## 🚀 Quick Start
 
 ```bash
-# Clone repository
+# 1. Clone repository
 git clone https://github.com/AlBochi/compliance-roi-engine.git
 cd compliance-roi-engine
 
-# Set up environment
+# 2. Set up environment
 python -m venv venv
-source venv/bin/activate
+source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
-# Launch app
+# 3. Configure secrets
+echo "OPENAI_API_KEY=your_key_here" > .env
+
+# 4. Launch app
 streamlit run app.py
