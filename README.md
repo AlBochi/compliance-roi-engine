@@ -1,33 +1,31 @@
-# Compliance ROI Engine 🚀
+# Compliance ROI Engine 🔐
 
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue)
 ![Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)
 ![License](https://img.shields.io/badge/license-MIT-green)
-![GitHub Last Commit](https://img.shields.io/github/last-commit/AlBochi/compliance-roi-engine)
+![Maintained](https://img.shields.io/badge/maintained-yes-brightgreen)
 
-> AI-powered toolkit for compliance financial analysis and audit automation
+> Enterprise-grade compliance automation developed by **Al Bochi**, Lead Cloud Security Compliance at **Saillent**
 
-## ✨ Features
+<div align="center">
+  <img src="https://via.placeholder.com/800x400?text=Compliance+ROI+Engine+Screenshot" alt="App Screenshot" width="70%">
+</div>
 
-- **ROI Dashboard**: Calculate financial impact of compliance programs
-- **Smart Policy Database**: Centralized controls (SOC2/HIPAA/GDPR/PCI DSS)
-- **Audit Assistant**: Generate standards-compliant responses with citations
-- **Coverage Analyzer**: Visualize framework implementation status
+## ✨ Key Features
 
-## 🚀 Quick Start
+- **Financial Quantification**: Calculate compliance program ROI with risk-adjusted metrics
+- **AI Auditor**: GPT-4 powered response generation with regulatory citations
+- **Multi-Standard Support**: SOC2, HIPAA, GDPR, PCI DSS, ISO 27001
+- **Executive Reporting**: Auto-generated compliance posture reports
 
+## 🚀 Deployment
+
+### Cloud Deployment (AWS)
 ```bash
-# 1. Clone repository
-git clone https://github.com/AlBochi/compliance-roi-engine.git
-cd compliance-roi-engine
+# Package application
+docker build -t compliance-roi-engine .
 
-# 2. Set up environment
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-
-# 3. Configure secrets
-echo "OPENAI_API_KEY=your_key_here" > .env
-
-# 4. Launch app
-streamlit run app.py
+# Push to ECR
+aws ecr create-repository --repository-name compliance-roi-engine
+docker tag compliance-roi-engine:latest your-account-id.dkr.ecr.region.amazonaws.com/compliance-roi-engine:latest
+docker push your-account-id.dkr.ecr.region.amazonaws.com/compliance-roi-engine:latest
