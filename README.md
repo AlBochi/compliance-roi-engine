@@ -76,4 +76,4 @@ Compliance Program Cost: $
 
 📜 License
 MIT License
-Copyright © 2023 Al Bochi - Saillent
+Copyright © 2025 Al Bochi - Saillent
