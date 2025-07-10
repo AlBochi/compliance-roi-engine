@@ -73,3 +73,7 @@ ROI Calculator
 python
 # Input
 Compliance Program Cost: $
+
+📜 License
+MIT License
+Copyright © 2023 Al Bochi - Saillent
